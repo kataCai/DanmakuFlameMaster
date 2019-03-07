@@ -280,9 +280,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 @Override
                 public void onPrepared(MediaPlayer mediaPlayer) {
                     mediaPlayer.start();
+                    mediaPlayer.setLooping(true);
                 }
             });
-            mVideoView.setVideoPath(Environment.getExternalStorageDirectory() + "/1.flv");
+            mVideoView.setVideoPath(Environment.getExternalStorageDirectory() + "/test.mp4");
         }
 
     }
